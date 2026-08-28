@@ -1,0 +1,404 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<meta
+    name="description"
+    content="CodeMate Code Playground - Practice HTML, CSS and JavaScript directly in your browser."
+>
+
+<title>Code Playground | CodeMate</title>
+
+<link
+    rel="stylesheet"
+    href="style.css"
+>
+
+</head><body class="playground-page"><!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="container nav-container">
+
+        <a
+            href="index.html"
+            class="logo"
+            aria-label="CodeMate Home"
+        >
+            Code<span>Mate</span>
+        </a>
+
+
+        <a
+            href="index.html"
+            class="secondary-btn"
+        >
+            ← Back
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<!-- ================= MAIN ================= -->
+
+<main>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="playground-hero">
+
+        <div class="container">
+
+            <p class="eyebrow">
+                CODE PLAYGROUND
+            </p>
+
+
+            <h1>
+
+                Write Code.
+
+                <span>
+                    Run It.
+                </span>
+
+                Learn.
+
+            </h1>
+
+
+            <p>
+    Write HTML, CSS and JavaScript, run your code,
+    experiment with ideas and see the result instantly.
+</p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= PLAYGROUND ================= -->
+
+    <section class="playground-section">
+
+        <div class="container">
+
+
+
+            <!-- ================= HTML ================= -->
+
+            <div class="editor-card">
+
+                <div class="editor-header">
+
+                    <div>
+
+                        <span
+                            class="language-dot html-dot"
+                        ></span>
+
+                        HTML
+
+                    </div>
+
+
+                    <button
+                        class="copy-btn"
+                        onclick="copyCode('htmlCode')"
+                    >
+                        📋 Copy
+                    </button>
+
+                </div>
+
+
+                <textarea
+                    id="htmlCode"
+                    spellcheck="false"
+                    aria-label="HTML code editor"
+                ><h1>Hello CodeMate!</h1>
+
+<p>Start learning web development.</p>
+<button onclick="sayHello()">Click Me</button></textarea>            </div>
+
+
+
+            <!-- ================= CSS ================= -->
+
+            <div class="editor-card">
+
+                <div class="editor-header">
+
+                    <div>
+
+                        <span
+                            class="language-dot css-dot"
+                        ></span>
+
+                        CSS
+
+                    </div>
+
+
+                    <button
+                        class="copy-btn"
+                        onclick="copyCode('cssCode')"
+                    >
+                        📋 Copy
+                    </button>
+
+                </div>
+
+
+                <textarea
+                    id="cssCode"
+                    spellcheck="false"
+                    aria-label="CSS code editor"
+                
+</textarea>
+
+            </div>
+
+
+
+            <!-- ================= JAVASCRIPT ================= -->
+
+            <div class="editor-card">
+
+                <div class="editor-header">
+
+                    <div>
+
+                        <span
+                            class="language-dot js-dot"
+                        ></span>
+
+                        JavaScript
+
+                    </div>
+
+
+                    <button
+                        class="copy-btn"
+                        onclick="copyCode('jsCode')"
+                    >
+                        📋 Copy
+                    </button>
+
+                </div>
+
+
+                <textarea
+                    id="jsCode"
+                    spellcheck="false"
+                    aria-label="JavaScript code editor"
+                >function sayHello() {
+alert("Hello from CodeMate!");
+
+}</textarea>
+
+            </div>
+
+
+
+            <!-- ================= BUTTONS ================= -->
+
+            <div class="playground-buttons">
+
+
+                <button
+                    class="run-btn"
+                    onclick="runCode()"
+                >
+                    ▶ Run Code
+                </button>
+
+
+                <button
+                    class="reset-btn"
+                    onclick="resetCode()"
+                >
+                    🔄 Reset
+                </button>
+
+
+                <button
+                    class="clear-btn"
+                    onclick="clearCode()"
+                >
+                    🗑 Clear
+                </button>
+
+
+                <button
+                    class="example-btn"
+                    onclick="loadExample()"
+                >
+                    ✨ Example
+                </button>
+
+
+                <button
+                    class="download-btn"
+                    onclick="downloadCode()"
+                >
+                    💾 Download
+                </button>
+
+
+                <button
+                    class="copy-all-btn"
+                    onclick="copyAllCode()"
+                >
+                    📋 Copy All
+                </button>
+
+            </div>
+
+
+
+            <!-- ================= OUTPUT ================= -->
+
+            <div class="output-card">
+
+                <div class="output-header">
+
+                    <span>
+                        Live Output
+                    </span>
+
+
+                    <span
+                        class="live-status"
+                        id="liveStatus"
+                    >
+                        ● Ready
+                    </span>
+
+                </div>
+
+
+                <iframe
+                    id="outputFrame"
+                    title="Code Output"
+                    sandbox="allow-scripts"
+                ></iframe>
+
+            </div>
+
+
+
+            <!-- ================= HOW TO USE ================= -->
+
+            <div class="tips-card">
+
+                <h2>
+                    💡 How to use
+                </h2>
+
+
+                <div class="tip-list">
+
+
+                    <div class="tip">
+
+                        <strong>1.</strong>
+
+                        Write your HTML in the
+                        HTML editor.
+
+                    </div>
+
+
+                    <div class="tip">
+
+                        <strong>2.</strong>
+
+                        Add styling in the
+                        CSS editor.
+
+                    </div>
+
+
+                    <div class="tip">
+
+                        <strong>3.</strong>
+
+                        Add functionality using
+                        JavaScript.
+
+                    </div>
+
+
+                    <div class="tip">
+
+                        <strong>4.</strong>
+
+                        Click
+                        <b>Run Code</b>
+                        to see the result.
+
+                    </div>
+
+
+                    <div class="tip">
+
+                        <strong>5.</strong>
+
+                        Use <b>Reset</b> whenever
+                        you want to restore the
+                        original code.
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= BACK ================= -->
+
+            <a
+                href="index.html"
+                class="back-btn"
+            >
+                ← Back to CodeMate
+            </a>
+
+
+        </div>
+
+    </section>
+
+</main>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="copyright">
+
+        © 2026 CodeMate.
+        Built for beginner developers.
+
+    </div>
+
+</footer>
+
+
+
+<script src="playground.js"></script>
+
+</body></html>

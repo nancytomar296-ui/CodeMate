@@ -1,0 +1,444 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<meta
+    name="description"
+    content="Beginner-friendly debugging guide by CodeMate"
+>
+
+<title>
+    Debugging Guide | CodeMate
+</title>
+
+<link
+    rel="stylesheet"
+    href="style.css"
+>
+
+</head><body class="guide-page"><!-- ================= HEADER ================= --><header class="header"><div class="container nav-container">
+
+    <a
+        href="index.html"
+        class="logo"
+    >
+        Code<span>Mate</span>
+    </a>
+
+
+    <a
+        href="index.html"
+        class="secondary-btn"
+    >
+        ← Back
+    </a>
+
+</div>
+
+</header><!-- ================= HERO ================= --><section class="guide-hero"><div class="container">
+
+    <p class="eyebrow">
+        DEBUGGING GUIDE
+    </p>
+
+
+    <h1>
+
+        Learn to
+
+        <span>
+            debug your code
+        </span>
+
+    </h1>
+
+
+    <p>
+
+        Don't randomly change your code.
+        Follow a simple process to find,
+        understand and fix the real problem.
+
+    </p>
+
+</div>
+
+</section><!-- ================= GUIDE ================= --><main class="guide-main"><div class="container guide-container">
+
+
+    <!-- STEP 1 -->
+
+    <article class="guide-step">
+
+        <div class="step-number">
+            01
+        </div>
+
+
+        <div>
+
+            <h2>
+                Read the complete error
+            </h2>
+
+
+            <p>
+
+                First read the complete error
+                message shown by your browser
+                or development environment.
+
+                Don't ignore the error type,
+                message or location.
+
+            </p>
+
+
+            <div class="diagram">
+
+                <div class="debug-console">
+
+                    <div class="error-line">
+
+                        ReferenceError:
+                        userName is not defined
+
+                    </div>
+
+
+                    <div>
+
+                        at script.js:5
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- STEP 2 -->
+
+    <article class="guide-step">
+
+        <div class="step-number">
+            02
+        </div>
+
+
+        <div>
+
+            <h2>
+                Find the file and line
+            </h2>
+
+
+            <p>
+
+                Error messages often tell you
+                the file and line where the
+                problem occurred.
+
+                For example,
+                <strong>
+                    script.js:5
+                </strong>
+                means the problem was reported
+                in script.js around line 5.
+
+            </p>
+
+
+            <div class="diagram">
+
+                <div class="debug-console">
+
+                    <div>
+
+                        File:
+
+                        <span class="fix-line">
+                            script.js
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        Line:
+
+                        <span class="fix-line">
+                            5
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- STEP 3 -->
+
+    <article class="guide-step">
+
+        <div class="step-number">
+            03
+        </div>
+
+
+        <div>
+
+            <h2>
+                Check the code carefully
+            </h2>
+
+
+            <p>
+
+                Look at the line mentioned in
+                the error.
+
+                Check variable names,
+                spelling, brackets, quotes,
+                functions and values.
+
+            </p>
+
+
+            <div class="diagram">
+
+                <div class="debug-console">
+
+                    <div class="error-line">
+
+                        console.log(userName);
+
+                    </div>
+
+
+                    <br>
+
+
+                    <div class="fix-line">
+
+                        const userName = "Nancy";
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- STEP 4 -->
+
+    <article class="guide-step">
+
+        <div class="step-number">
+            04
+        </div>
+
+
+        <div>
+
+            <h2>
+                Make one change at a time
+            </h2>
+
+
+            <p>
+
+                Avoid changing many things
+                at once.
+
+                Make one small change,
+                run the project and check
+                what happens.
+
+                This makes debugging much easier.
+
+            </p>
+
+
+            <div class="diagram">
+
+                <div class="debug-console">
+
+                    <div>
+                        🔎 Find the problem
+                    </div>
+
+
+                    <div>
+                        ✏️ Make one change
+                    </div>
+
+
+                    <div>
+                        ▶ Run the project
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- STEP 5 -->
+
+    <article class="guide-step">
+
+        <div class="step-number">
+            05
+        </div>
+
+
+        <div>
+
+            <h2>
+                Test the fix
+            </h2>
+
+
+            <p>
+
+                Run your project again after
+                making the change.
+
+                If the error disappears and
+                the feature works correctly,
+                your fix was successful.
+
+            </p>
+
+
+            <div class="diagram">
+
+                <div class="debug-console">
+
+                    <div class="fix-line">
+
+                        ✓ Error fixed
+
+                    </div>
+
+
+                    <div>
+
+                        Code is running correctly.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- COMMON ERRORS -->
+
+    <article class="guide-step">
+
+        <div class="step-number">
+            💡
+        </div>
+
+
+        <div>
+
+            <h2>
+                Remember common errors
+            </h2>
+
+
+            <p>
+
+                These are some common problems
+                beginners may encounter:
+
+            </p>
+
+
+            <div class="diagram">
+
+                <div class="debug-console">
+
+                    <div>
+                        ReferenceError → variable not found
+                    </div>
+
+
+                    <div>
+                        SyntaxError → invalid code structure
+                    </div>
+
+
+                    <div>
+                        TypeError → incorrect value usage
+                    </div>
+
+
+                    <div>
+                        404 → file or page not found
+                    </div>
+
+
+                    <div>
+                        CORS → cross-origin request blocked
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <a
+                href="index.html"
+                class="back-btn"
+            >
+                ← Back to CodeMate
+            </a>
+
+        </div>
+
+    </article>
+
+
+</div>
+
+</main><!-- ================= FOOTER ================= --><footer><div class="copyright">
+
+    © 2026 CodeMate.
+    Built for beginner developers.
+
+</div>
+
+</footer></body></html>

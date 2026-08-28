@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="CodeMate - Your beginner-friendly coding companion."
+    >
+
+    <meta
+        name="theme-color"
+        content="#6c5ce7"
+    >
+
+    <title>CodeMate | Coding Companion</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="container nav-container">
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+            Code<span>Mate</span>
+        </a>
+
+
+        <button
+            class="menu-btn"
+            id="menuBtn"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+        >
+            ☰
+        </button>
+
+
+        <nav
+            class="navbar"
+            id="navbar"
+        >
+
+            <a href="#home">Home</a>
+
+            <a href="#tools">Tools</a>
+
+            <a href="#analyzer">Analyzer</a>
+
+            <a href="#playground">Playground</a>
+
+            <a href="#guides">Guides</a>
+
+            <a href="#tips">Tips</a>
+
+
+            <div class="search-box">
+
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search..."
+                    autocomplete="off"
+                    aria-label="Search CodeMate"
+                >
+
+                <button
+                    id="searchBtn"
+                    type="button"
+                    aria-label="Search"
+                >
+                    🔍
+                </button>
+
+            </div>
+
+
+            <button
+                class="theme-btn"
+                id="themeBtn"
+                type="button"
+                aria-label="Switch to dark mode"
+            >
+                🌙
+            </button>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- ================= MAIN ================= -->
+
+<main>
+
+
+<!-- ================= HERO ================= -->
+
+<section
+    class="hero"
+    id="home"
+>
+
+    <div class="container hero-container">
+
+
+        <div class="hero-content">
+
+            <p class="eyebrow">
+                YOUR CODING COMPANION
+            </p>
+
+
+            <h1>
+    Understand code.
+    <span>Build with confidence.</span>
+</h1>
+
+
+<p class="hero-description">
+
+    CodeMate is a beginner-friendly coding companion
+    that helps you understand errors, check your code,
+    practice HTML, CSS and JavaScript, learn GitHub,
+    and deploy your projects.
+
+</p>
+
+            <div class="hero-buttons">
+
+    <a
+        href="#analyzer"
+        class="primary-btn"
+    >
+        🐞 Analyze My Code →
+    </a>
+
+
+    <a
+        href="playground.html"
+        class="secondary-btn"
+    >
+        💻 Try Playground
+    </a>
+
+</div>
+        </div>
+
+
+
+        <!-- CODE WINDOW -->
+
+        <div class="hero-code">
+
+            <div class="window-top">
+
+                <div class="window-dots">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+                <span>
+                    script.js
+                </span>
+
+            </div>
+
+
+<pre><code><span class="purple">const</span> coder = {
+
+    device:
+        <span class="green">"Mobile"</span>,
+
+    level:
+        <span class="green">"Beginner"</span>,
+
+    goal:
+        <span class="green">"Developer"</span>
+
+};
+
+<span class="purple">function</span>
+<span class="blue">learn</span>() {
+
+    console.log(
+        <span class="green">"Keep learning!"</span>
+    );
+
+}</code></pre>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= STATS ================= -->
+
+<section class="stats">
+
+    <div class="container stats-container">
+
+        <div class="stat">
+
+            <strong>01</strong>
+
+            <span>
+                Error Analysis
+            </span>
+
+        </div>
+
+
+        <div class="stat">
+
+            <strong>02</strong>
+
+            <span>
+                Code Checking
+            </span>
+
+        </div>
+
+
+        <div class="stat">
+
+            <strong>03</strong>
+
+            <span>
+                GitHub Help
+            </span>
+
+        </div>
+
+
+        <div class="stat">
+
+            <strong>04</strong>
+
+            <span>
+                Deployment Help
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= TOOLS ================= -->
+
+<section
+    class="section"
+    id="tools"
+>
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                TOOLS
+            </p>
+
+            <h2>
+    Learn. Practice. Build.
+</h2>
+
+<p>
+    Everything a beginner needs to understand
+    code, solve problems and build real projects.
+</p>
+
+        </div>
+
+
+
+        <div class="tool-grid">
+
+
+            <!-- ERROR -->
+
+            <article class="tool-card">
+
+                <div class="tool-icon">
+                    🐞
+                </div>
+
+                <h3>
+                    Error Analyzer
+                </h3>
+
+                <p>
+                    Paste your code and error to
+                    understand what went wrong.
+                </p>
+
+                <a href="#analyzer">
+                    Open →
+                </a>
+
+            </article>
+
+
+
+            <!-- CODE -->
+<!-- LEARN -->
+
+<article class="tool-card">
+
+    <div class="tool-icon">
+        📚
+    </div>
+
+    <h3>
+        Beginner Guides
+    </h3>
+
+    <p>
+        Learn file structure, debugging,
+        GitHub and deployment step by step.
+    </p>
+
+    <a href="#guides">
+        Learn →
+    </a>
+
+</article>
+           
+
+
+
+            <!-- PLAYGROUND -->
+
+            <article class="tool-card">
+
+                <div class="tool-icon">
+                    💻
+                </div>
+
+                <h3>
+                    Code Playground
+                </h3>
+
+                <p>
+                    Write HTML, CSS and JavaScript
+                    and see the result instantly.
+                </p>
+
+                <a href="playground.html">
+                    Try Playground →
+                </a>
+
+            </article>
+
+
+
+            <!-- GITHUB -->
+
+            <article class="tool-card">
+
+                <div class="tool-icon">
+                    🐙
+                </div>
+
+                <h3>
+                    GitHub Guide
+                </h3>
+
+                <p>
+                    Learn repository, upload,
+                    commit and push basics.
+                </p>
+
+                <a href="github-guide.html">
+                    Open →
+                </a>
+
+            </article>
+
+
+
+            <!-- DEPLOYMENT -->
+
+            <article class="tool-card">
+
+                <div class="tool-icon">
+                    🚀
+                </div>
+
+                <h3>
+                    Deployment Guide
+                </h3>
+
+                <p>
+                    Learn how to make your
+                    website available online.
+                </p>
+
+                <a href="deployment-guide.html">
+                    Open →
+                </a>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= ANALYZER ================= -->
+
+<section
+    class="analyzer-section"
+    id="analyzer"
+>
+
+    <div class="container">
+
+
+        <div class="section-heading light">
+
+            <p class="eyebrow">
+                CODE ANALYZER
+            </p>
+
+            <h2>
+                Show CodeMate your problem
+            </h2>
+
+            <p>
+                Paste your code and error message below.
+            </p>
+
+        </div>
+
+
+
+        <div class="analyzer-box">
+
+
+            <!-- INPUT -->
+
+            <div class="analyzer-input">
+
+
+                <div class="input-header">
+
+                    <label for="codeInput">
+                        Your Code
+                    </label>
+
+                    <button
+                        type="button"
+                        id="loadExampleBtn"
+                    >
+                        Load Example
+                    </button>
+
+                </div>
+
+
+                <textarea
+                    id="codeInput"
+                    placeholder="Paste your HTML, CSS or JavaScript code here..."
+                    spellcheck="false"
+                ></textarea>
+
+
+
+                <div class="input-header error-label">
+
+                    <label for="errorInput">
+                        Error Message
+                    </label>
+
+                    <button
+                        type="button"
+                        id="errorExampleBtn"
+                    >
+                        Example Error
+                    </button>
+
+                </div>
+
+
+                <textarea
+                    id="errorInput"
+                    class="error-input"
+                    placeholder="Paste the error message here..."
+                    spellcheck="false"
+                ></textarea>
+
+
+
+                <div class="analyzer-buttons">
+
+                    <button
+                        class="primary-btn"
+                        id="analyzeBtn"
+                        type="button"
+                    >
+                        Analyze →
+                    </button>
+
+
+                    <button
+                        class="clear-btn"
+                        id="clearBtn"
+                        type="button"
+                    >
+                        Clear
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- RESULT -->
+
+            <div
+                class="result-area"
+                id="resultArea"
+            >
+
+                <div class="empty-result">
+
+                    <div class="empty-icon">
+                        🔎
+                    </div>
+
+                    <h3>
+                        Analysis appears here
+                    </h3>
+
+                    <p>
+                        Enter your code and error,
+                        then click Analyze.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- QUICK ERRORS -->
+
+        <div class="quick-errors">
+
+            <h3>
+                Quick Error Examples
+            </h3>
+
+
+            <div class="chips">
+
+                <button
+                    type="button"
+                    data-error="reference"
+                >
+                    ReferenceError
+                </button>
+
+
+                <button
+                    type="button"
+                    data-error="syntax"
+                >
+                    SyntaxError
+                </button>
+
+
+                <button
+                    type="button"
+                    data-error="type"
+                >
+                    TypeError
+                </button>
+
+
+                <button
+                    type="button"
+                    data-error="404"
+                >
+                    404
+                </button>
+
+
+                <button
+                    type="button"
+                    data-error="cors"
+                >
+                    CORS
+                </button>
+
+
+                <button
+                    type="button"
+                    data-error="fetch"
+                >
+                    Fetch
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= CODE PLAYGROUND ================= -->
+
+<section
+    class="section playground-preview"
+    id="playground"
+>
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                PRACTICE CODING
+            </p>
+
+            <h2>
+                Write code and
+                <span>see it run.</span>
+            </h2>
+
+            <p>
+                Practice HTML, CSS and JavaScript
+                directly in your browser.
+            </p>
+
+        </div>
+
+
+        <div class="playground-preview-box">
+
+            <div class="playground-preview-content">
+
+                <div class="tool-icon">
+                    💻
+                </div>
+
+                <h3>
+                    Interactive Code Playground
+                </h3>
+
+                <p>
+                    Experiment with code, test your ideas
+                    and instantly see the output.
+                </p>
+
+                <a
+                    href="playground.html"
+                    class="primary-btn"
+                >
+                    Open Code Playground →
+                </a>
+
+            </div>
+
+
+            <div class="mini-code-window">
+
+                <div class="window-top">
+
+                    <div class="window-dots">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+                    <span>
+                        playground.html
+                    </span>
+
+                </div>
+
+
+<pre><code><span class="purple">&lt;h1&gt;</span>
+    Hello CodeMate!
+<span class="purple">&lt;/h1&gt;</span>
+
+<span class="blue">&lt;button&gt;</span>
+    Run Code 🚀
+<span class="blue">&lt;/button&gt;</span></code></pre>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= HISTORY ================= -->
+
+<section class="section history-section">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                HISTORY
+            </p>
+
+            <h2>
+                Recent analyses
+            </h2>
+
+            <p>
+                Your recent analyses are saved only
+                in this browser.
+            </p>
+
+        </div>
+
+
+        <div
+            class="history-list"
+            id="historyList"
+        >
+        </div>
+
+
+        <button
+            class="history-clear"
+            id="clearHistory"
+            type="button"
+        >
+            Clear History
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= GUIDES ================= -->
+
+<section
+    class="section guides-section"
+    id="guides"
+>
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                BEGINNER GUIDES
+            </p>
+
+            <h2>
+                Learn before you build
+            </h2>
+
+            <p>
+                Understand the basics instead of
+                blindly copying code.
+            </p>
+
+        </div>
+
+
+
+        <div class="guide-list">
+
+
+            <!-- FILE -->
+
+            <article class="guide-item">
+
+                <div class="guide-number">
+                    01
+                </div>
+
+
+                <div class="guide-content">
+
+                    <h3>
+                        Project File Structure
+                    </h3>
+
+                    <p>
+                        Learn how HTML, CSS and
+                        JavaScript work together.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="file-guide.html"
+                    class="guide-link"
+                >
+                    Read →
+                </a>
+
+            </article>
+
+
+
+            <!-- GITHUB -->
+
+            <article class="guide-item">
+
+                <div class="guide-number">
+                    02
+                </div>
+
+
+                <div class="guide-content">
+
+                    <h3>
+                        GitHub Basics
+                    </h3>
+
+                    <p>
+                        Understand repositories,
+                        commits and uploading files.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="github-guide.html"
+                    class="guide-link"
+                >
+                    Read →
+                </a>
+
+            </article>
+
+
+
+            <!-- DEPLOYMENT -->
+
+            <article class="guide-item">
+
+                <div class="guide-number">
+                    03
+                </div>
+
+
+                <div class="guide-content">
+
+                    <h3>
+                        Website Deployment
+                    </h3>
+
+                    <p>
+                        Understand the basic process
+                        of making a website live.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="deployment-guide.html"
+                    class="guide-link"
+                >
+                    Read →
+                </a>
+
+            </article>
+
+
+
+            <!-- DEBUGGING -->
+
+            <article class="guide-item">
+
+                <div class="guide-number">
+                    04
+                </div>
+
+
+                <div class="guide-content">
+
+                    <h3>
+                        Debugging Basics
+                    </h3>
+
+                    <p>
+                        Learn how to read errors and
+                        find the actual problem.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="debugging-guide.html"
+                    class="guide-link"
+                >
+                    Read →
+                </a>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= TIPS ================= -->
+
+<section
+    class="tips-section"
+    id="tips"
+>
+
+    <div class="container tips-container">
+
+
+        <div>
+
+            <p class="eyebrow">
+                CODING MINDSET
+            </p>
+
+
+            <h2>
+                Don't fear errors.
+                <span>Understand them.</span>
+            </h2>
+
+
+            <p>
+                Every developer gets errors.
+                The important skill is knowing
+                how to investigate them.
+            </p>
+
+        </div>
+
+
+
+        <div class="tip-card">
+
+            <div class="tip-icon">
+                💡
+            </div>
+
+
+            <h3>
+                Quick Tip
+            </h3>
+
+
+            <p>
+                Always read the error message
+                before changing your code.
+                It often tells you the file and
+                line where the problem is.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="container footer-container">
+
+
+        <div>
+
+            <a
+                href="index.html"
+                class="logo footer-logo"
+            >
+                Code<span>Mate</span>
+            </a>
+
+            <p>
+                Your Coding Companion on Mobile.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="github-guide.html">
+                GitHub
+            </a>
+
+            <a href="deployment-guide.html">
+                Deploy
+            </a>
+
+            <a href="debugging-guide.html">
+                Debugging
+            </a>
+
+            <a href="playground.html">
+                Playground
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 CodeMate.
+        Built for beginner developers.
+
+    </div>
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
